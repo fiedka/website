@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+h1 {
+  background-color: #030303;
+  color: #f1ed4a;
+  padding: 15px 35px;
+  text-transform: uppercase;
+}
+h2 {
+  background-color: #fff;
+  color: #134134;
+  margin: 10px 5px;
+  font-size: 14pt;
+}
+ul {
+  font-family: monospace;
+  font-size: 11pt;
+  list-style-type: none;
+}
+ul li:before {
+  font-size: 16px;
+  content: '⚙️';
+  display: inline-block;
+  width: 25px;
+}
+ul li:nth-of-type(even):before {
+  content: '🐛';
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 600px;
+}
+figcaption {
+  font-weight: bold;
+  font-size: 10.5pt;
+}
+span.small {
+  margin: 0 10px;
+  font-size: 8pt;
+}
+a {
+  font-family: sans-serif;
+  font-size: 10pt;
+}
+p {
+  padding: 5px;
+}
+img {
+  width: 100%;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 900px;
+  margin: 20px 5px;
+}
+@media screen and (min-width: 800px) {
+  section {
+    margin: 10px 20px;
+    flex-direction: row-reverse;
+  }
+  img {
+    max-width: 400px;
+  }
+}
+section * {
+  flex: 1;
+}
+nav {
+  float: right;
+}
+main, nav {
+  font-size: 13pt;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}

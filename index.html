@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Graphical cross-platform firmware editing app">
+  <meta name="keywords" content="Firmware, Editor, App">
+  <meta name="author" content="Engineers of the world">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Fiedka 🧰⚙️🐙</title>
+</head>
+<body>
+  <h1>Fiedka<span class="small">(Федка)</span>🧰⚙️🐙</h1>
+  <main>
+    <section>
+      <span>
+        <h2>TPM Event Log 📃</h2>
+      <p>
+        Check what happened when your hardware platform started. What driver
+        blobs were loaded? What were their hashes? Did they match the expected
+        values? How many steps were there? Is bootloader or kernel integrity
+        compromised? Can you trust your firmware?
+      </p>
+      </span>
+      <img src="tpm-eventlog.png" alt="TPM Event Log" />
+    </section>
+    <section>
+      <span>
+        <h2>UEFI/PSP/ME Filesystem Exploration 🕵️</h2>
+        <p>
+          Look what drivers your OEM included, or tailor an image for your own
+          or your client's specific use-case. See what can be removed, swap out
+          the built-in boot mechanisms for
+          <a href="https://linuxboot.org/">LinuxBoot</a>, and deploy a fully
+          secure boot environment.
+        </p>
+      </span>
+      <img src="uefi.png" alt="UEFI Filesystem View" />
+    </section>
+    <section>
+      <span>
+        <h2>Flash Usage Visualization</h2>
+        <p>
+          See how many blocks of your SPI flash are in use. What partitions or
+          components occupy excess amounts of space? Is the storage used
+          efficiently? Is there enough free space to add a new feature to the
+          pre-OS environment?
+        </p>
+      </span>
+      <img src="flashmap.png" alt="Flash Map" />
+    </section>
+  </main>
+</body>
+</html>
