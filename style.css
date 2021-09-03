@@ -71,7 +71,7 @@ section {
     margin: 10px 20px;
     flex-direction: row-reverse;
   }
-  section:nth-child(2) {
+  section:nth-of-type(even) {
     flex-direction: row;
   }
   img {
