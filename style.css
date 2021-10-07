@@ -18,18 +18,12 @@ h2 {
   font-size: 14pt;
 }
 ul {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 15px;
   font-family: monospace;
   font-size: 11pt;
   list-style-type: none;
-}
-ul li:before {
-  font-size: 16px;
-  content: '⚙️';
-  display: inline-block;
-  width: 25px;
-}
-ul li:nth-of-type(even):before {
-  content: '🐛';
 }
 figure {
   display: flex;
@@ -83,12 +77,13 @@ section {
     max-width: 400px;
   }
 }
-nav {
-  float: right;
-}
 main, nav {
   font-size: 13pt;
   padding: 8px;
   display: flex;
   flex-direction: column;
+}
+nav {
+  max-width: 900px;
+  padding: 0 24px;
 }
