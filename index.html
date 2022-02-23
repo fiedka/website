@@ -46,7 +46,7 @@
     </section>
     <section>
       <div>
-        <h2>UEFI/PSP/ME Filesystem Exploration 📁</h2>
+        <h2>Filesystem Exploration 📁</h2>
         <p>
           Look what drivers your OEM included, or tailor an image for your own
           or your client's specific use-case. See what can be removed, swap out
@@ -54,6 +54,40 @@
           <a href="https://linuxboot.org/">LinuxBoot</a>, and deploy a fully
           secure boot environment.
         </p>
+        <details>
+          <summary>Supported filesystems</summary>
+          <table>
+            <thead>
+              <tr>
+                <td>FS Type</td>
+                <td>Analyze</td>
+                <td>Edit</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>UEFI FFS</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td>coreboot CBFS</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>AMD PSP/ASP</td>
+                <td>✅</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>Intel (CS)ME</td>
+                <td>❌</td>
+                <td>❌</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
       </div>
       <img src="uefi.png" alt="UEFI Filesystem View" />
     </section>
